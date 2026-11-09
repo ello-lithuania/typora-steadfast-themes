@@ -1,0 +1,58 @@
+/* Powder Blue Morning: a Typora theme. MIT licence. https://krikstynudovana.lt/ */
+:root {
+  --bg-color: #fbf9f4;
+  --side-bar-bg-color: #eef2f6;
+  --text-color: #22303d;
+  --select-text-bg-color: #dfe9f2;
+  --select-text-font-color: #22303d;
+  --item-hover-bg-color: #dfe9f2;
+  --window-border: 1px solid #dde4ea;
+  --active-file-bg-color: #dfe9f2;
+  --active-file-text-color: #22303d;
+  --active-file-border-color: #3c5c7c;
+  --primary-color: #3c5c7c;
+  --control-text-color: #566471;
+  --monospace: "JetBrains Mono", "Cascadia Mono", Consolas, Menlo, monospace;
+}
+html { font-size: 16px; }
+body {
+  font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: #22303d;
+  background: #fbf9f4;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+#write { max-width: 780px; margin: 0 auto; padding: 48px 32px 96px; }
+#write > *:first-child { margin-top: 0; }
+h1, h2, h3, h4, h5, h6 { color: #3c5c7c; font-weight: 700; line-height: 1.25; margin: 1.8em 0 0.6em; }
+h1 { font-size: 2.15rem; letter-spacing: -0.02em; padding-bottom: 0.35em; border-bottom: 2px solid #dde4ea; }
+h2 { font-size: 1.55rem; letter-spacing: -0.01em; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.05rem; }
+h5, h6 { font-size: 0.95rem; color: #566471; }
+p, ul, ol, table, blockquote, pre, .md-fences { margin: 0.9em 0; }
+a { color: #3c5c7c; text-decoration: underline; text-decoration-color: #7d5e2f; text-underline-offset: 3px; }
+a:hover { color: #2f4a65; }
+strong { color: #22303d; font-weight: 700; }
+mark { background: #dfe9f2; color: #22303d; padding: 0 3px; border-radius: 3px; }
+hr { border: 0; border-top: 1px solid #dde4ea; margin: 2.4em 0; }
+blockquote { margin-left: 0; padding: 0.4em 1.1em; color: #566471; background: #eef2f6; border-left: 3px solid #7d5e2f; border-radius: 0 6px 6px 0; }
+code, tt { font-family: var(--monospace); font-size: 0.88em; background: #eef2f6; color: #2f4a65; padding: 2px 5px; border-radius: 4px; }
+pre, .md-fences { font-family: var(--monospace); font-size: 0.88em; background: #eef2f6; border: 1px solid #dde4ea; border-radius: 8px; padding: 12px 14px; overflow-x: auto; }
+.md-fences code, pre code { background: none; padding: 0; color: #22303d; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95em; }
+table th { background: #3c5c7c; color: #fff; font-weight: 600; text-align: left; padding: 8px 12px; }
+table td { padding: 8px 12px; border-bottom: 1px solid #dde4ea; }
+table tr:nth-child(even) td { background: #eef2f6; }
+img { max-width: 100%; border-radius: 8px; }
+li { margin: 0.25em 0; }
+.md-task-list-item > input { accent-color: #3c5c7c; }
+.CodeMirror-gutters { background: transparent; border-right: 0; }
+.cm-s-inner .cm-keyword { color: #3c5c7c; font-weight: 600; }
+.cm-s-inner .cm-string { color: #7d5e2f; }
+.cm-s-inner .cm-comment { color: #566471; font-style: italic; }
+.cm-s-inner .cm-number, .cm-s-inner .cm-atom { color: #7d5e2f; }
+.cm-s-inner .cm-def, .cm-s-inner .cm-property { color: #2f4a65; }
+#typora-sidebar, .sidebar-content { background: #eef2f6; }
+.file-node-content:hover, .file-list-item:hover { background: #dfe9f2; }
+@media print { body { background: #fff; } #write { padding: 0; max-width: none; } }

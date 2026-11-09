@@ -1,0 +1,58 @@
+/* Plum Evening: a Typora theme. MIT licence. https://vestuviumetines.lt/ */
+:root {
+  --bg-color: #fbf7f4;
+  --side-bar-bg-color: #f2e9ec;
+  --text-color: #2a1a26;
+  --select-text-bg-color: #efdfea;
+  --select-text-font-color: #2a1a26;
+  --item-hover-bg-color: #efdfea;
+  --window-border: 1px solid #e6d8df;
+  --active-file-bg-color: #efdfea;
+  --active-file-text-color: #2a1a26;
+  --active-file-border-color: #6d2e5e;
+  --primary-color: #6d2e5e;
+  --control-text-color: #655660;
+  --monospace: "JetBrains Mono", "Cascadia Mono", Consolas, Menlo, monospace;
+}
+html { font-size: 16px; }
+body {
+  font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: #2a1a26;
+  background: #fbf7f4;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+#write { max-width: 780px; margin: 0 auto; padding: 48px 32px 96px; }
+#write > *:first-child { margin-top: 0; }
+h1, h2, h3, h4, h5, h6 { color: #6d2e5e; font-weight: 700; line-height: 1.25; margin: 1.8em 0 0.6em; }
+h1 { font-size: 2.15rem; letter-spacing: -0.02em; padding-bottom: 0.35em; border-bottom: 2px solid #e6d8df; }
+h2 { font-size: 1.55rem; letter-spacing: -0.01em; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.05rem; }
+h5, h6 { font-size: 0.95rem; color: #655660; }
+p, ul, ol, table, blockquote, pre, .md-fences { margin: 0.9em 0; }
+a { color: #6d2e5e; text-decoration: underline; text-decoration-color: #8c5a1d; text-underline-offset: 3px; }
+a:hover { color: #55234a; }
+strong { color: #2a1a26; font-weight: 700; }
+mark { background: #efdfea; color: #2a1a26; padding: 0 3px; border-radius: 3px; }
+hr { border: 0; border-top: 1px solid #e6d8df; margin: 2.4em 0; }
+blockquote { margin-left: 0; padding: 0.4em 1.1em; color: #655660; background: #f2e9ec; border-left: 3px solid #8c5a1d; border-radius: 0 6px 6px 0; }
+code, tt { font-family: var(--monospace); font-size: 0.88em; background: #f2e9ec; color: #55234a; padding: 2px 5px; border-radius: 4px; }
+pre, .md-fences { font-family: var(--monospace); font-size: 0.88em; background: #f2e9ec; border: 1px solid #e6d8df; border-radius: 8px; padding: 12px 14px; overflow-x: auto; }
+.md-fences code, pre code { background: none; padding: 0; color: #2a1a26; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95em; }
+table th { background: #6d2e5e; color: #fff; font-weight: 600; text-align: left; padding: 8px 12px; }
+table td { padding: 8px 12px; border-bottom: 1px solid #e6d8df; }
+table tr:nth-child(even) td { background: #f2e9ec; }
+img { max-width: 100%; border-radius: 8px; }
+li { margin: 0.25em 0; }
+.md-task-list-item > input { accent-color: #6d2e5e; }
+.CodeMirror-gutters { background: transparent; border-right: 0; }
+.cm-s-inner .cm-keyword { color: #6d2e5e; font-weight: 600; }
+.cm-s-inner .cm-string { color: #8c5a1d; }
+.cm-s-inner .cm-comment { color: #655660; font-style: italic; }
+.cm-s-inner .cm-number, .cm-s-inner .cm-atom { color: #8c5a1d; }
+.cm-s-inner .cm-def, .cm-s-inner .cm-property { color: #55234a; }
+#typora-sidebar, .sidebar-content { background: #f2e9ec; }
+.file-node-content:hover, .file-list-item:hover { background: #efdfea; }
+@media print { body { background: #fff; } #write { padding: 0; max-width: none; } }
